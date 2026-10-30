@@ -1,6 +1,5 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Rafael Velásquez Rojas</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<title>Rafael Enrique Velásquez Rojas</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Karla:ital,wght@0,400;0,500;0,600;1,400&display=swap">
 
@@ -209,6 +208,14 @@ section.block + section.block { border-top: 1px solid var(--line-soft); }
 }
 .chip.ghost { background: transparent; color: var(--faint); border: 1px solid var(--line); font-weight: 500; }
 
+.row-links { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; margin-top: 0.7rem; }
+.row-links a {
+  font-size: 0.85rem; text-decoration: none; color: var(--ink);
+  border-bottom: 1px solid var(--line); padding-bottom: 2px;
+  transition: border-color 150ms ease, color 150ms ease;
+}
+.row-links a:hover { color: var(--accent); border-color: var(--accent); }
+
 /* ---------- contact ---------- */
 .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem 3rem; align-items: start; }
 .mailrow { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 0.9rem; margin-top: 0.5rem; }
@@ -237,7 +244,7 @@ html { scroll-behavior: smooth; }
 
 <header class="masthead">
   <div class="wrap masthead-in">
-    <a class="mark" href="#top">Rafael Velásquez <em>Rojas</em></a>
+    <a class="mark" href="#top">Rafael Enrique Velásquez <em>Rojas</em></a>
     <nav class="mast-nav" aria-label="Sections">
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
@@ -253,20 +260,20 @@ html { scroll-behavior: smooth; }
     <div class="hero-grid">
       <div>
         <p class="eyebrow">Universidad de los Andes &middot; Bogotá</p>
-        <h1>Rafael Velásquez Rojas</h1>
+        <h1>Rafael Velásquez</h1>
         <p class="hero-lede">Physicist and biomedical engineer building generative models for single-cell biology.</p>
         <p class="hero-body">I am finishing an M.Sc. in Biomedical Engineering under Pablo Arbeláez, after undergraduate degrees in Physics and in Biomedical Engineering. My work runs from the stochastic physics of gene regulation to flow matching and equivariant graph models for molecules, materials and medical images.</p>
         <div class="linkrow">
           <a href="mailto:r.velasquez@uniandes.edu.co">Email</a>
-          <a href="#" title="Add your Google Scholar URL">Scholar</a>
-          <a href="#" title="Add your GitHub URL">GitHub</a>
-          <a href="#" title="Add your LinkedIn URL">LinkedIn</a>
-          <a href="#" title="Add a link to your CV PDF">Curriculum vitae</a>
+          <a href="https://scholar.google.com/citations?user=-2kE7-4AAAAJ">Scholar</a>
+          <a href="https://github.com/Rafther0112">GitHub</a>
+          <a href="https://www.linkedin.com/in/rafael-enrique-velasquez-rojas-1b4466227/">LinkedIn</a>
+          <a href="CV.pdf">Curriculum vitae</a>
         </div>
       </div>
 
       <div class="portrait-wrap">
-        <img class="portrait" src="portrait.jpg" width="900" height="1125" alt="Rafael Velásquez Rojas">
+        <img class="portrait" src="portrait.jpg" width="900" height="1125" alt="Rafael Enrique Velásquez Rojas">
       </div>
     </div>
 
@@ -350,7 +357,11 @@ html { scroll-behavior: smooth; }
           <h3>Beyond Volume Overlap: Surface Matching for Topology-Aware Coronary Artery Segmentation</h3>
           <div class="row-sub">STACOM Workshop, MICCAI 2026</div>
           <p>A bipartite surface metric and a surface distance loss with explicit removal and creation terms, plus instance weighting by inverse squared radius so that thin distal branches count. Evaluated on nnU-Net, SwinUNETR and NexToU over ImageCAS and ASOCA.</p>
-          <div class="chips"><span class="chip">Accepted</span><span class="chip ghost">First author</span></div>
+          <div class="chips"><span class="chip">Published</span><span class="chip ghost">First author</span></div>
+          <div class="row-links">
+            <a href="https://papers.miccai.org/miccai-2026-sat/paper/STACOM2026_013.pdf">Paper (PDF)</a>
+            <a href="https://github.com/BCV-Uniandes/Coronary-Surface-Matching">Code</a>
+          </div>
         </div>
       </article>
 
@@ -371,6 +382,9 @@ html { scroll-behavior: smooth; }
           <div class="row-sub">Physical Review E</div>
           <p>Why feed-forward loops are over-represented in transcriptional networks, read through the information a motif transmits against the cost it pays to transmit it, under stochastic gene expression. Grew out of my undergraduate physics thesis with Juan Manuel Pedraza.</p>
           <div class="chips"><span class="chip">Under review</span><span class="chip ghost">First author</span></div>
+          <div class="row-links">
+            <a href="https://github.com/Rafther0112/FFL_Research">Code and poster</a>
+          </div>
         </div>
       </article>
 
